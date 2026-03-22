@@ -2,6 +2,45 @@
 
 Transform raw meeting transcripts into professional summaries and prioritized action items using Google Gemini AI.
 
+---
+
+## Screenshots
+
+### Home Screen
+> Paste your transcript or drag & drop a `.txt` file to get started.
+
+![Home Screen](docs/screenshots/home.png)
+
+---
+
+### Loading State
+> While processing, the app shows a step-by-step progress indicator.
+
+![Loading State](docs/screenshots/loading.png)
+
+---
+
+### Generated Summary
+> A 300–500 word professional summary is generated covering key decisions and outcomes.
+
+![Meeting Summary](docs/screenshots/summary.png)
+
+---
+
+### Action Items Table
+> All action items are extracted with assignee, due date, and priority level.
+
+![Action Items](docs/screenshots/action-items.png)
+
+---
+
+### Filtering by Priority
+> Use the filter bar to view High, Medium, or Low priority items only.
+
+![Priority Filter](docs/screenshots/filter.png)
+
+---
+
 ## Features
 
 - **Smart Summarization** — Generates 300–500 word summaries highlighting decisions, outcomes, and discussion points
@@ -34,6 +73,13 @@ meeting-minutes/
 │       │   └── LoadingState.jsx    / .css
 │       └── utils/
 │           └── api.js
+├── docs/
+│   └── screenshots/        # ← place your UI screenshots here
+│       ├── home.png
+│       ├── loading.png
+│       ├── summary.png
+│       ├── action-items.png
+│       └── filter.png
 ├── examples/
 │   ├── sample_short.txt
 │   ├── sample_medium.txt
@@ -75,6 +121,9 @@ Set your Gemini API key:
 # macOS / Linux
 export GEMINI_API_KEY="your_api_key_here"
 
+# Windows (Command Prompt)
+set GEMINI_API_KEY=your_api_key_here
+
 # Windows (PowerShell)
 $env:GEMINI_API_KEY="your_api_key_here"
 ```
@@ -103,18 +152,75 @@ Navigate to **http://localhost:5173** in your browser.
 
 ---
 
-## Usage
+## How to Use
 
-1. **Paste** a meeting transcript into the text area, or **drag & drop** a `.txt` file
-2. Click **"Generate Minutes"**
-3. View the generated summary and action items
-4. Filter action items by priority (High / Medium / Low)
-5. Click the checkbox on any action to mark it complete
-6. Use the **Export** button to copy all action items as plain text
+### Step 1 — Input your transcript
 
-### Sample Transcript
+![Home Screen](docs/screenshots/home.png)
 
-Click **"Load Sample"** in the app to try a pre-loaded Q4 planning meeting transcript.
+Paste your meeting transcript directly into the text area, or drag & drop a `.txt` file onto it. You can also click **"Load Sample"** to try the app instantly with a pre-loaded example transcript.
+
+---
+
+### Step 2 — Generate minutes
+
+Click the **"Generate Minutes"** button. The app will show a progress indicator while it processes your transcript.
+
+![Loading State](docs/screenshots/loading.png)
+
+---
+
+### Step 3 — Read the summary
+
+A professional 300–500 word summary appears, covering all key discussion points, decisions made, and important outcomes.
+
+![Meeting Summary](docs/screenshots/summary.png)
+
+Use the **Copy** button in the top right of the summary card to copy it to your clipboard.
+
+---
+
+### Step 4 — Review action items
+
+All action items extracted from the transcript are shown in a table with:
+- **Action** — what needs to be done
+- **Assignee** — who is responsible
+- **Due Date** — when it's due (if mentioned)
+- **Priority** — High, Medium, or Low
+
+![Action Items](docs/screenshots/action-items.png)
+
+---
+
+### Step 5 — Filter and manage
+
+Use the **filter bar** to show only High, Medium, or Low priority items. Click the **checkbox** on any row to mark it as complete. Click **Export** to copy all action items as plain text.
+
+![Priority Filter](docs/screenshots/filter.png)
+
+---
+
+### Step 6 — Start over
+
+Click **"New transcript"** at the top of the results to go back and process another transcript.
+
+---
+
+## Adding Your Screenshots
+
+1. Create a `docs/screenshots/` folder in the project root
+2. Take screenshots of each screen while running the app locally
+3. Save them with these exact filenames:
+
+| Filename | What to capture |
+|---|---|
+| `home.png` | The initial screen with the empty text area |
+| `loading.png` | The processing/loading state after clicking Generate |
+| `summary.png` | The generated summary card |
+| `action-items.png` | The full action items table |
+| `filter.png` | The table with a priority filter active (e.g. High selected) |
+
+> **Tip:** On Windows use `Snipping Tool` (Win+Shift+S). On Mac use `Cmd+Shift+4`. Aim for a browser window width of around 1200px for clean screenshots.
 
 ---
 
@@ -155,7 +261,7 @@ Process a transcript and return summary + action items.
 
 ### `GET /api/health`
 
-Returns `{"status": "ok", "model": "gemini-1.5-flash"}`.
+Returns `{"status": "ok", "model": "gemini-2.0-flash"}`.
 
 ---
 
@@ -168,24 +274,13 @@ Returns `{"status": "ok", "model": "gemini-1.5-flash"}`.
 
 ---
 
-## Long Transcript Handling
-
-For transcripts exceeding ~12,000 characters (~3,000 tokens), the backend:
-
-1. Splits the transcript at paragraph boundaries into chunks
-2. Summarizes each chunk independently
-3. Synthesizes all chunk summaries into one cohesive final summary
-4. Extracts action items from the full transcript (up to 24,000 chars)
-
----
-
 ## Technology Stack
 
 | Layer | Technology |
 |---|---|
 | Frontend | React 18, Vite, plain CSS |
 | Backend | Python 3, Flask, flask-cors |
-| AI | Google Gemini 1.5 Flash |
+| AI | Google Gemini 2.0 Flash |
 | Fonts | Playfair Display, DM Sans, DM Mono |
 
 ---
@@ -196,3 +291,4 @@ For transcripts exceeding ~12,000 characters (~3,000 tokens), the backend:
 - For production, configure your web server (nginx, etc.) to proxy `/api` to Flask
 - No database or authentication is required for the MVP
 - All state is ephemeral — no data is persisted between sessions
+- Run `python test_app.py` from the `backend/` folder to verify all logic is working
