@@ -1,4 +1,4 @@
-# MinutesMind — AI Meeting Minutes Generator
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9e901b7-d4b1-44b9-a818-bfbee7bb46b4" /># MinutesMind — AI Meeting Minutes Generator
 
 Transform raw meeting transcripts into professional summaries and prioritized action items using Google Gemini AI.
 
@@ -8,36 +8,36 @@ Transform raw meeting transcripts into professional summaries and prioritized ac
 
 ### Home Screen
 > Paste your transcript or drag & drop a `.txt` file to get started.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6bc4a478-3815-447d-a1b8-1dbb212cde82" />
 
-![Home Screen](docs/screenshots/home.png)
 
 ---
 
 ### Loading State
 > While processing, the app shows a step-by-step progress indicator.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4745d53b-0b65-43cf-a214-9bbd1f771f93" />
 
-![Loading State](docs/screenshots/loading.png)
 
 ---
 
 ### Generated Summary
 > A 300–500 word professional summary is generated covering key decisions and outcomes.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b4b8dbd3-dacb-45e5-a6c4-399f9183a1c9" />
 
-![Meeting Summary](docs/screenshots/summary.png)
 
 ---
 
 ### Action Items Table
 > All action items are extracted with assignee, due date, and priority level.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/10f10fb0-dfe8-4e52-b39f-48c8a5cc63bd" />
 
-![Action Items](docs/screenshots/action-items.png)
 
 ---
 
 ### Filtering by Priority
 > Use the filter bar to view High, Medium, or Low priority items only.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/be0c71c6-8ed3-4a6a-bca6-54bc5de360ee" />
 
-![Priority Filter](docs/screenshots/filter.png)
 
 ---
 
