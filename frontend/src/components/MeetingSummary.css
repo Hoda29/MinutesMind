@@ -1,0 +1,103 @@
+.summary-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  animation: fadeUp 0.4s ease both;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--paper);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.label-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: var(--paper-warm);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 3px 7px;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.copy-btn:hover {
+  background: var(--paper-warm);
+  color: var(--ink);
+  border-color: var(--border-strong);
+}
+
+.summary-body {
+  padding: 28px 28px 28px 28px;
+}
+
+.summary-rule {
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.summary-text p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.summary-text p:last-child {
+  margin-bottom: 0;
+}

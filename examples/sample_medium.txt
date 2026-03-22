@@ -1,0 +1,106 @@
+Date: October 28, 2024
+Meeting: Q4 Marketing & Product Alignment Session
+Duration: 75 minutes
+Attendees: Claire Nguyen (CMO), Ben Osei (VP Product), Fatima Al-Rashid (Head of Growth), Jordan Blake (Brand Director), Kenji Tanaka (Engineering Manager), Yuki Sato (Data Analyst), Priscilla Odom (Customer Success Lead)
+
+Claire: Good morning everyone. Today's agenda is to align on the Q4 marketing campaigns, finalize messaging for the new enterprise tier, review our Q3 data, and discuss the holiday push. Let's start with Yuki walking us through Q3 performance.
+
+Yuki: Thanks Claire. So Q3 was mixed. Overall monthly active users grew 12% quarter-over-quarter, which is ahead of our 10% target. However, conversion from free to paid dropped from 8.2% to 6.9%. The biggest driver appears to be the onboarding funnel — we're seeing a 34% drop-off at the payment step specifically. The good news is that users who complete onboarding have a 90-day retention rate of 71%, up from 64% last quarter.
+
+Claire: So retention is up but conversion is down. Ben, does this tie to anything on the product side?
+
+Ben: Absolutely. We made the onboarding longer in Q3 — added the company size and role questions after the payment step, which I think created friction. We're reverting that change in November. Kenji, can you confirm the timeline?
+
+Kenji: We can have that reverted by November 8th. It's a two-day task but we need to coordinate with QA.
+
+Ben: Great. We should also note that the new team collaboration features we launched in late Q3 have seen strong early traction — 23% of new sign-ups are inviting at least one teammate within the first week.
+
+Fatima: That's actually a really important signal for our growth strategy. If team adoption is strong, we should be leaning into bottom-up virality — referral programs, team invite incentives, that kind of thing.
+
+Claire: Agreed. Let's talk about Q4 campaigns then. Jordan, what's the brand team proposing?
+
+Jordan: We have three major campaigns planned. First, the enterprise launch — we're formally announcing our enterprise tier on November 15th. We've got a press strategy, LinkedIn thought leadership series, and a webinar lined up. Second, the holiday campaign runs December 1st through December 31st and targets individual professionals and small teams with a promotional offer. Third, we're doing an end-of-year wrap content series — personalized data summaries for each user, a bit like Spotify Wrapped.
+
+Claire: I love the Wrapped idea. Yuki, can our data infrastructure support personalized summaries at scale?
+
+Yuki: We can do it, but we'd need about two weeks of engineering time to build the pipeline. The data is all there; it's just the automated generation and email delivery that needs work.
+
+Kenji: That's probably closer to three weeks when you account for testing. And it would need to start no later than November 10th to be ready for December.
+
+Claire: Okay, Kenji can you formally scope that out and send Ben and me an estimate by Friday?
+
+Kenji: Will do.
+
+Ben: I want to flag something on the enterprise launch. We're announcing on November 15th, but the SSO feature — which every enterprise prospect has asked about — isn't ready until November 22nd. We're going to announce capabilities we can't fully deliver yet.
+
+Claire: Is there any flexibility on the SSO timeline, Kenji?
+
+Kenji: Not without pulling the team off the onboarding revert and the Wrapped pipeline. Those are competing priorities.
+
+Claire: Okay, we have a decision to make. Option one: push the enterprise announcement to November 22nd when SSO is ready. Option two: announce on the 15th but be transparent that SSO is "coming within the week." Option three: announce the 15th and downplay SSO in initial messaging.
+
+Priscilla: From a customer success standpoint, I'd strongly recommend against option three. We have four enterprise prospects who've specifically asked about SSO timelines. If we announce without it and they find out it's not ready, it damages trust.
+
+Fatima: I'd lean toward option one — push to the 22nd. A week's delay is worth getting it right, especially for enterprise.
+
+Ben: Agreed. I'll take the hit on the timeline.
+
+Jordan: That does affect our press strategy — I'll need to notify the journalists we briefed under embargo. Claire, can you approve the decision officially so I can communicate it?
+
+Claire: Yes, we're pushing to November 22nd. Jordan, please send updated briefing notes to all embargoed contacts by tomorrow EOD.
+
+Jordan: Understood.
+
+Fatima: Coming back to the growth point — I want to propose a formal referral program for Q4. The mechanism would be: invite a teammate, both of you get one month free. Given the 23% team adoption number, the viral coefficient could be meaningful.
+
+Claire: What would the cost look like?
+
+Fatima: At our current ARPU, we'd be giving away about $19 per referral pair. If we get 5,000 referrals, that's $95,000 in forgone revenue, but our LTV modeling suggests each retained referred user is worth $340 over 12 months. The ROI is strongly positive if churn holds.
+
+Ben: I like it. We'd need engineering support to build the referral tracking.
+
+Kenji: That's probably a two-week build. I'd estimate it's not ready until mid-November at earliest.
+
+Claire: Can we do a manual referral program for the first few weeks — promo codes processed by CS — while engineering builds the automated version?
+
+Priscilla: We can handle that. I'd need a clear process doc and a way to validate codes. Maybe a simple spreadsheet to start.
+
+Fatima: I can draft the process doc. Let's say I'll have it ready by this Friday.
+
+Claire: Perfect. Fatima owns the referral program launch — manual first, automated by late November.
+
+Turning to the holiday campaign — Jordan, what's the offer?
+
+Jordan: We're proposing 30% off annual plans for the month of December, plus a free 14-day trial extension for users who convert during the period. We'd run paid social on LinkedIn and Meta, email to our full list, and retargeting.
+
+Claire: Yuki, what does our data say about December conversion behavior historically?
+
+Yuki: Last December we saw a 40% spike in sign-ups in the final two weeks — likely driven by people setting up new tools for the new year. Conversion to paid was actually higher in December than any other month at 9.4%.
+
+Claire: So people are ready to buy. Good. Jordan, I'd recommend we front-load the messaging around new year, new tools — lean into the fresh start psychology rather than just the discount.
+
+Jordan: Love that framing. I'll rework the campaign brief to reflect that angle.
+
+Ben: One product note for the holiday campaign — we're launching the new dashboard in late November. We should make sure marketing materials reflect the updated UI.
+
+Jordan: I'll need final UI screenshots and a feature list from the product team. Ben, can someone own getting me those assets?
+
+Ben: Kenji, can you make sure Jordan has final design screenshots by November 20th?
+
+Kenji: I'll coordinate with design. Should be doable.
+
+Claire: Let's wrap up with a quick check on budget. Fatima, where are we on Q4 marketing spend?
+
+Fatima: We have $320,000 allocated. The holiday paid media is $180,000. The enterprise webinar and events budget is $60,000. That leaves $80,000 flexible. I'd recommend using $40,000 for the referral program promotion and holding $40,000 in reserve for opportunistic campaigns.
+
+Claire: Approved. Let me summarize decisions: Enterprise launch pushed to November 22nd. Referral program launches manually ASAP, automated version by late November. Holiday campaign runs December 1–31 with "new year" framing. Wrapped campaign targeting December launch pending engineering scope confirmation.
+
+Does anyone have anything to add?
+
+Priscilla: One thing — I need updated messaging docs for the enterprise tier so my CS team can handle inbound questions consistently. Whoever owns the enterprise messaging on the marketing side should loop me in.
+
+Jordan: I'll send you the enterprise messaging guide by next Wednesday.
+
+Priscilla: Thanks.
+
+Claire: Great. Good session everyone. Let's keep the momentum going.

@@ -1,0 +1,48 @@
+Date: November 5, 2024
+Meeting: Weekly Engineering Standup
+Duration: 30 minutes
+Attendees: Raj Patel (Tech Lead), Anna Kowalski (Backend), Derek Liu (Frontend), Simone Martin (QA)
+
+Raj: Morning everyone, let's keep this quick. Anna, what's your status?
+
+Anna: I finished the database migration scripts for the new user schema. All tests are passing locally. I need Derek to review the API contract changes I made — there are two new endpoints he'll need to integrate on the frontend.
+
+Derek: I can look at that today. When did you push it?
+
+Anna: It's in the feature/user-schema branch. PR is open, I'll tag you.
+
+Derek: Great. On my side, I'm about 70% done with the new onboarding flow. The first three steps are complete — email verification, profile setup, and preferences. I'm stuck on the payment integration step because the Stripe sandbox keys expired. Raj, can you regenerate those?
+
+Raj: Yeah, I'll do that right after this meeting and send them over Slack.
+
+Derek: Perfect. If I get those today I should be able to finish the onboarding flow by end of week.
+
+Simone: I finished regression testing for the v2.1 release. Found two bugs — one critical, one minor. The critical one is a race condition in the login flow when two sessions try to refresh the token simultaneously. Anna, that's likely yours.
+
+Anna: Ugh, yeah that sounds like the token refresh logic. I'll dig into it today. Can you send me the reproduction steps?
+
+Simone: Already in Jira — ticket QA-441.
+
+Anna: Got it.
+
+Simone: The minor bug is a UI glitch where the avatar doesn't load on the first render. Derek, that's yours.
+
+Derek: I know exactly what that is — it's a missing loading state. I can fix that in 20 minutes.
+
+Raj: Okay. Let's make sure both bugs are fixed before Thursday. We have a stakeholder demo at 2pm and I want everything clean. Simone, can you do a final smoke test Thursday morning?
+
+Simone: I'll block 9 to 11am for that.
+
+Raj: Perfect. Also — quick heads up — the infra team is doing server maintenance Saturday night from midnight to 4am. Anna, make sure your migration scripts aren't scheduled during that window.
+
+Anna: The migrations run at 2am on Saturdays. I'll reschedule them to Sunday morning.
+
+Raj: Thanks. Derek, one more thing — product wants a loading skeleton on the dashboard. It's not blocking the release but they'd like it in the next sprint. Can you estimate that?
+
+Derek: Probably a day of work, maybe a day and a half. I can add it to my sprint planning for next week.
+
+Raj: Great. Anything else?
+
+[No further items]
+
+Raj: Alright, let's get to it. Good standup everyone.
