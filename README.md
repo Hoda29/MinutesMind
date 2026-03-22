@@ -156,7 +156,6 @@ Navigate to **http://localhost:5173** in your browser.
 
 ### Step 1 — Input your transcript
 
-![Home Screen](docs/screenshots/home.png)
 
 Paste your meeting transcript directly into the text area, or drag & drop a `.txt` file onto it. You can also click **"Load Sample"** to try the app instantly with a pre-loaded example transcript.
 
@@ -166,7 +165,6 @@ Paste your meeting transcript directly into the text area, or drag & drop a `.tx
 
 Click the **"Generate Minutes"** button. The app will show a progress indicator while it processes your transcript.
 
-![Loading State](docs/screenshots/loading.png)
 
 ---
 
@@ -174,7 +172,6 @@ Click the **"Generate Minutes"** button. The app will show a progress indicator 
 
 A professional 300–500 word summary appears, covering all key discussion points, decisions made, and important outcomes.
 
-![Meeting Summary](docs/screenshots/summary.png)
 
 Use the **Copy** button in the top right of the summary card to copy it to your clipboard.
 
@@ -188,7 +185,6 @@ All action items extracted from the transcript are shown in a table with:
 - **Due Date** — when it's due (if mentioned)
 - **Priority** — High, Medium, or Low
 
-![Action Items](docs/screenshots/action-items.png)
 
 ---
 
@@ -196,7 +192,6 @@ All action items extracted from the transcript are shown in a table with:
 
 Use the **filter bar** to show only High, Medium, or Low priority items. Click the **checkbox** on any row to mark it as complete. Click **Export** to copy all action items as plain text.
 
-![Priority Filter](docs/screenshots/filter.png)
 
 ---
 
