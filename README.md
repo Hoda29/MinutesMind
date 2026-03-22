@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9e901b7-d4b1-44b9-a818-bfbee7bb46b4" /># MinutesMind — AI Meeting Minutes Generator
+# MinutesMind — AI Meeting Minutes Generator
 
 Transform raw meeting transcripts into professional summaries and prioritized action items using Google Gemini AI.
 
